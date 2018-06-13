@@ -1,0 +1,19 @@
+
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <a href="" class="navbar-wagon-brand"><img src="images/mosdev-logo.png" alt="logo"></a>
+    <div class="dropdown">
+      <i class="dropdown-toggle navbar-wagon-item" data-toggle="dropdown">
+      <% if I18n.locale == I18n.default_locale %>
+        <%=image_tag "France.png", height: 50 %>
+      <% else %>
+        <%=image_tag "UK.png", height: 50 %>
+      <% end %>
+        </i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+
+        <li class="flag"><a href="/"><%=image_tag "France.png", height: 50 %></a></li>
+        <li class="flag"><a href="/en"><%=image_tag "UK.png", height: 50 %></a></li>
+      </ul>
+    </div>
+</div>
