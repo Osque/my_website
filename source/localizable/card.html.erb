@@ -1,0 +1,41 @@
+
+
+  <div class="container profile-card">
+
+      <header>
+          <a href="http://victory-design.ru/">
+              <img src="images/mosdev-logo.png" />
+          </a>
+          <h1>Oscar Maybon</h1>
+          <h2>
+            <% if I18n.locale == I18n.default_locale %>
+                <%= t("developer").capitalize %> web
+              <% else %>
+                Web <%= t("developer") %>
+              <% end %>
+          </h2>
+      </header>
+
+      <div class="profile-bio">
+          <p> Bordeaux, France </p>
+          <p><a href="mailto:oscar.maybon@gmail.com">oscar.maybon@gmail.com</a></p>
+          <p><a href="tel:631097580">+33 6 31 09 75 80</a></p>
+      </div>
+
+      <ul class="profile-social-links">
+          <li>
+            <a href="#" class="d-inline-block text-center ml-2"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#" class="d-inline-block text-center ml-2" target="_blank">
+              <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/oscar-maybon-8425276a/" target="_blank" class="d-inline-block text-center ml-2">
+              <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+            </a>
+          </li>
+      </ul>
+  </div>
+
